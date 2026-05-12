@@ -1,5 +1,5 @@
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:auto;
 }
 *{
   margin:0;
@@ -26,7 +26,7 @@ body{
   position:fixed;
   top:0;
 
-  backdrop-filter:blur(10px);
+  backdrop-filter: blur(4px);
   background:rgba(5,8,22,0.7);
 
   z-index:1000;
@@ -247,7 +247,7 @@ body::before{
 
   background:#18b4ff;
 
-  filter:blur(180px);
+  filter:blur(90px);
 
   opacity:0.12;
 
@@ -1300,64 +1300,6 @@ body{
 
 }
 /* ================================= */
-/* 3D CARD EFFECT */
-/* ================================= */
-
-.card,
-.review-card,
-.project-card,
-.stat-box,
-.info-card{
-
-  transform-style:preserve-3d;
-
-  will-change:transform;
-
-  transition:
-  transform 0.15s ease,
-  box-shadow 0.3s ease,
-  border-color 0.3s ease;
-}
-
-/* GLOW */
-
-.card::after,
-.review-card::after,
-.project-card::after,
-.stat-box::after,
-.info-card::after{
-
-  content:'';
-
-  position:absolute;
-
-  inset:0;
-
-  border-radius:inherit;
-
-  background:
-  radial-gradient(
-    circle at var(--x) var(--y),
-    rgba(24,180,255,0.18),
-    transparent 35%
-  );
-
-  opacity:0;
-
-  transition:opacity 0.3s ease;
-
-  pointer-events:none;
-}
-
-.card:hover::after,
-.review-card:hover::after,
-.project-card:hover::after,
-.stat-box:hover::after,
-.info-card:hover::after{
-
-  opacity:1;
-}
-/* ================================= */
 /* CURSOR GLOW */
 /* ================================= */
 
@@ -1774,7 +1716,7 @@ body{
 
   overflow:hidden;
 
-  filter:blur(100px);
+  filter:blur(60px);
 
   opacity:0.7;
 }
@@ -2111,6 +2053,13 @@ body{
 
   .review-card p{
     min-height:auto;
+  }
+
+}
+@media(max-width:980px){
+
+  .cursor-glow{
+    display:none;
   }
 
 }
