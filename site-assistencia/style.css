@@ -75,14 +75,17 @@ body{
 /* HERO */
 
 .hero{
-  width:100%;
+  position:relative;
+
+  padding:
+  170px 8% 90px;
+
   min-height:100vh;
 
   display:flex;
   align-items:center;
   justify-content:space-between;
 
-  padding:140px 8% 80px;
   gap:60px;
 }
 
@@ -2070,6 +2073,44 @@ body{
   .hero-text h1{
 
     font-size:36px;
+  }
+
+}
+/* ================================= */
+/* FIX REVIEWS */
+/* ================================= */
+
+.reviews{
+  padding:120px 8%;
+}
+
+.reviews-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:30px;
+
+  margin-top:60px;
+}
+
+.review-card{
+  height:100%;
+}
+
+.review-card p{
+  min-height:120px;
+}
+
+@media(max-width:600px){
+
+  .reviews{
+    padding:90px 5%;
+  }
+
+  .review-card p{
+    min-height:auto;
   }
 
 }
