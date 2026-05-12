@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
 
-<!-- ========================= -->
-<!-- SEO + META TAGS COMPLETAS -->
-<!-- ========================= -->
+<!-- SEO -->
 
 <meta charset="UTF-8">
 
@@ -26,12 +23,12 @@
 
 <meta
   name="description"
-  content="Assistência técnica especializada em Curitiba. Formatação, upgrade SSD, limpeza, redes Wi-Fi, suporte remoto e criação de sites profissionais."
+  content="Assistência técnica especializada em Curitiba. Manutenção de computadores, notebooks, redes Wi-Fi, suporte remoto, upgrades SSD e criação de sites profissionais."
 >
 
 <meta
   name="keywords"
-  content="assistência técnica Curitiba, manutenção notebook Curitiba, suporte técnico Curitiba, criação de sites Curitiba, redes wifi Curitiba, upgrade SSD Curitiba"
+  content="assistência técnica Curitiba, manutenção notebook Curitiba, suporte técnico Curitiba, criação de sites Curitiba, upgrade SSD Curitiba, redes wifi Curitiba"
 >
 
 <meta
@@ -82,7 +79,7 @@
 
 <meta
   property="og:description"
-  content="Manutenção de computadores, notebooks, upgrades SSD, redes Wi-Fi e criação de sites profissionais em Curitiba."
+  content="Assistência técnica especializada, upgrades SSD, redes Wi-Fi, suporte remoto e criação de sites profissionais em Curitiba."
 >
 
 <meta
@@ -159,27 +156,18 @@
 
 <!-- CSS -->
 
-<link
-  rel="stylesheet"
-  href="style.css"
->
+<link rel="stylesheet" href="style.css">
 
-<!-- FONTES -->
+<!-- FONT -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link
-  rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin
->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link
   href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-  rel="stylesheet"
->
+  rel="stylesheet">
 
-<!-- ÍCONES -->
+<!-- ICONS -->
 
 <link
   rel="stylesheet"
@@ -190,6 +178,28 @@
 
 <body>
 
+<div class="scroll-progress"></div>
+<div id="particles-js"></div>
+<div class="mesh-gradient"></div>
+<div class="cursor-glow"></div>
+
+<div class="loader">
+
+  <div class="loader-content">
+
+    <img
+      src="corefix-icon.png"
+      alt="CoreFix Logo"
+      class="loader-logo"
+      loading="lazy"
+    >
+
+    <h1>CoreFix Tech</h1>
+
+  </div>
+
+</div>
+
 <!-- NAVBAR -->
 
 <nav class="navbar">
@@ -198,52 +208,148 @@
     CoreFix Tech
   </div>
 
-  <ul class="menu">
+  <div class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
 
-    <li><a href="#inicio">Início</a></li>
-    <li><a href="#servicos">Serviços</a></li>
+  <ul class="menu">
+    <li><a class="active" href="#">Início</a></li>
+    <li><a href="#services">Serviços</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#contato">Contato</a></li>
-
   </ul>
+
+  <a
+    class="btn-nav"
+    href="https://wa.me/5541998511625"
+    target="_blank"
+  >
+    WhatsApp
+  </a>
 
 </nav>
 
 <!-- HERO -->
 
-<section class="hero" id="inicio">
+<section class="hero">
 
-  <div class="hero-content">
-
-    <span class="tag">
-      Tecnologia • Redes • Suporte • Sites
-    </span>
+  <div class="hero-text">
 
     <h1 class="gradient-text">
       Assistência Técnica em Curitiba e Criação de Sites Profissionais
     </h1>
 
     <p>
-      Especialistas em manutenção de computadores, notebooks, redes Wi-Fi,
-      upgrades SSD, suporte remoto e desenvolvimento de sites modernos.
+      Assistência técnica especializada, upgrades,
+      suporte remoto e criação de sites profissionais
+      para empresas e negócios em Curitiba.
     </p>
 
     <div class="hero-buttons">
 
       <a
-        href="https://wa.me/5541998511625"
         class="btn-primary"
+        href="https://wa.me/5541998511625"
         target="_blank"
       >
-        Falar no WhatsApp
+        Falar com Técnico
       </a>
 
       <a
-        href="#servicos"
         class="btn-secondary"
+        href="#services"
       >
         Ver Serviços
       </a>
+
+    </div>
+
+    <div class="hero-badges">
+
+      <span>✓ Atendimento em Curitiba</span>
+      <span>✓ Suporte Remoto</span>
+      <span>✓ Resposta Rápida</span>
+
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+
+    <img
+      src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200&auto=format&fit=crop"
+      alt="Computador Gamer"
+      loading="lazy"
+    >
+
+  </div>
+
+</section>
+
+<!-- DEPOIMENTOS -->
+
+<section class="reviews reveal">
+
+  <div class="section-title">
+    <span>AVALIAÇÕES</span>
+    <h2>O que nossos clientes dizem</h2>
+  </div>
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+
+      <div class="review-stars">
+        ★★★★★
+      </div>
+
+      <p>
+        Atendimento muito rápido e profissional.
+        Meu computador ficou muito mais rápido
+        depois da troca para SSD.
+      </p>
+
+      <div class="review-user">
+        <strong>Lucas Martins</strong>
+        <span>Cliente em Curitiba</span>
+      </div>
+
+    </div>
+
+    <div class="review-card">
+
+      <div class="review-stars">
+        ★★★★★
+      </div>
+
+      <p>
+        Resolveu um problema que outras assistências
+        não conseguiram. Atendimento excelente
+        e preço justo.
+      </p>
+
+      <div class="review-user">
+        <strong>Amanda Souza</strong>
+        <span>Suporte Remoto</span>
+      </div>
+
+    </div>
+
+    <div class="review-card">
+
+      <div class="review-stars">
+        ★★★★★
+      </div>
+
+      <p>
+        Muito atencioso e explicou tudo com clareza.
+        Recomendo para quem precisa de manutenção gamer.
+      </p>
+
+      <div class="review-user">
+        <strong>Felipe Costa</strong>
+        <span>Upgrade Gamer</span>
+      </div>
 
     </div>
 
@@ -253,62 +359,72 @@
 
 <!-- SERVIÇOS -->
 
-<section class="services" id="servicos">
+<section class="services reveal" id="services">
 
-  <div class="section-title">
+  <span class="subtitle">
+    NOSSOS SERVIÇOS
+  </span>
 
-    <span>Serviços</span>
+  <h2>
+    O que fazemos
+  </h2>
 
-    <h2>Soluções Profissionais</h2>
+  <div class="cards">
 
-  </div>
+    <div class="card">
 
-  <div class="services-grid">
+      <div class="icon">
+        <i class="fa-solid fa-computer"></i>
+      </div>
 
-    <div class="service-card">
-
-      <i class="fas fa-laptop-medical"></i>
-
-      <h3>Assistência Técnica</h3>
+      <h3>Formatação</h3>
 
       <p>
-        Formatação, limpeza interna, reparos e otimização de computadores e notebooks.
+        Instalação completa do Windows com drivers,
+        programas essenciais e otimização.
       </p>
 
     </div>
 
-    <div class="service-card">
+    <div class="card">
 
-      <i class="fas fa-network-wired"></i>
-
-      <h3>Redes Wi-Fi</h3>
-
-      <p>
-        Configuração de roteadores, repetidores e melhorias de sinal Wi-Fi.
-      </p>
-
-    </div>
-
-    <div class="service-card">
-
-      <i class="fas fa-hard-drive"></i>
+      <div class="icon">
+        <i class="fa-solid fa-bolt"></i>
+      </div>
 
       <h3>Upgrade SSD</h3>
 
       <p>
-        Aumente drasticamente a velocidade do seu computador com SSD.
+        Mais velocidade e desempenho para notebooks
+        e computadores.
       </p>
 
     </div>
 
-    <div class="service-card">
+    <div class="card">
 
-      <i class="fas fa-globe"></i>
+      <div class="icon">
+        <i class="fa-solid fa-broom"></i>
+      </div>
 
-      <h3>Criação de Sites</h3>
+      <h3>Limpeza</h3>
 
       <p>
-        Desenvolvimento de landing pages e sites modernos para empresas.
+        Limpeza interna completa e troca de pasta térmica.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <div class="icon">
+        <i class="fa-solid fa-gamepad"></i>
+      </div>
+
+      <h3>PC Gamer</h3>
+
+      <p>
+        Montagem, upgrades e otimização para jogos.
       </p>
 
     </div>
@@ -319,49 +435,60 @@
 
 <!-- SOBRE -->
 
-<section class="about" id="sobre">
+<section class="services reveal" id="sobre">
 
-  <div class="section-title">
+  <span class="subtitle">
+    SOBRE NÓS
+  </span>
 
-    <span>Sobre</span>
+  <h2>
+    Atendimento técnico especializado
+  </h2>
 
-    <h2>Quem Somos</h2>
+  <div class="cards">
 
-  </div>
+    <div class="card">
 
-  <div class="about-content">
+      <div class="icon">
+        <i class="fa-solid fa-shield"></i>
+      </div>
 
-    <p>
-      A CoreFix Tech é especializada em manutenção de computadores,
-      notebooks, redes Wi-Fi e suporte técnico em Curitiba.
-      Também trabalhamos com criação de sites modernos e profissionais.
-    </p>
+      <h3>Segurança</h3>
 
-  </div>
+      <p>
+        Atendimento transparente e diagnóstico completo
+        para seu equipamento.
+      </p>
 
-</section>
+    </div>
 
-<!-- CONTATO -->
+    <div class="card">
 
-<section class="contact" id="contato">
+      <div class="icon">
+        <i class="fa-solid fa-gears"></i>
+      </div>
 
-  <div class="section-title">
+      <h3>Experiência</h3>
 
-    <span>Contato</span>
+      <p>
+        Especializado em manutenção, upgrades e computadores gamers.
+      </p>
 
-    <h2>Fale Conosco</h2>
+    </div>
 
-  </div>
+    <div class="card">
 
-  <div class="contact-content">
+      <div class="icon">
+        <i class="fa-solid fa-headset"></i>
+      </div>
 
-    <a
-      href="https://wa.me/5541998511625"
-      target="_blank"
-      class="btn-primary"
-    >
-      WhatsApp
-    </a>
+      <h3>Suporte Remoto</h3>
+
+      <p>
+        Atendimento remoto para resolver problemas rapidamente.
+      </p>
+
+    </div>
 
   </div>
 
@@ -427,15 +554,57 @@
 
 <!-- FOOTER -->
 
-<footer>
+<footer class="footer">
 
-  <div class="footer-bottom">
+  <div class="footer-logo">
 
-    © 2026 CoreFix Tech — Tecnologia, suporte técnico e presença digital.
+    <h2>CoreFix Tech</h2>
+
+    <p>
+      Suporte técnico profissional para computadores,
+      notebooks e PCs gamers.
+    </p>
+
+  </div>
+
+  <div class="footer-links">
+
+    <h3>Navegação</h3>
+
+    <a href="#">Início</a>
+    <a href="#services">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+
+  </div>
+
+  <div class="footer-contact">
+
+    <h3>Contato</h3>
+
+    <p>WhatsApp: +55 41 99851-1625</p>
+    <p>Curitiba - Paraná</p>
+    <p>@techcorefix</p>
 
   </div>
 
 </footer>
+
+<div class="footer-bottom">
+
+  © 2026 CoreFix Tech — Todos os direitos reservados.
+
+</div>
+
+<a
+  href="https://wa.me/5541998511625"
+  class="whatsapp-float"
+  target="_blank"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
 <script src="script.js"></script>
 
