@@ -54,11 +54,12 @@ tsParticles.load("particles-js", {
   background:{
     color:"transparent"
   },
+  fpsLimit: 40,
 
   particles:{
 
     number:{
-      value:50
+      value:25
     },
 
     color:{
@@ -66,7 +67,7 @@ tsParticles.load("particles-js", {
     },
 
     links:{
-      enable:true,
+      enable:false,
       color:"#18b4ff",
       distance:150,
       opacity:0.15
@@ -207,53 +208,6 @@ ${mensagem}
   });
 
 }
-/* ================================= */
-/* 3D CARDS */
-/* ================================= */
-
-const interactiveCards = document.querySelectorAll(
-  '.card, .review-card, .project-card, .stat-box, .info-card'
-);
-
-interactiveCards.forEach(card => {
-
-  card.addEventListener('mousemove', (e) => {
-
-    const rect = card.getBoundingClientRect();
-
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = ((y - centerY) / 18) * -1;
-    const rotateY = (x - centerX) / 18;
-
-    card.style.transform = `
-      perspective(1000px)
-      rotateX(${rotateX}deg)
-      rotateY(${rotateY}deg)
-      translateY(-8px)
-    `;
-
-    card.style.setProperty('--x', `${x}px`);
-    card.style.setProperty('--y', `${y}px`);
-
-  });
-
-  card.addEventListener('mouseleave', () => {
-
-    card.style.transform = `
-      perspective(1000px)
-      rotateX(0deg)
-      rotateY(0deg)
-      translateY(0)
-    `;
-
-  });
-
-});
 /* ================================= */
 /* CURSOR GLOW */
 /* ================================= */
