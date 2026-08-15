@@ -47,6 +47,10 @@ content="CoreFix Tech"
 <meta property="og:type" content="website">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://cdn.jsdelivr.net 'sha256-3yn8QTa+wjkhrNQE2Kwlxt23t2Zq40334HZyLZ9xeqM='; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https://images.unsplash.com data:; frame-src https://www.google.com; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; form-action 'self' https://wa.me; upgrade-insecure-requests"
+  >
 
   <title>CoreFix Tech | Assistência Técnica em Curitiba</title>
 
@@ -66,6 +70,9 @@ content="CoreFix Tech"
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
   />
 
 </head>
@@ -109,6 +116,7 @@ content="CoreFix Tech"
       class="btn-nav"
       href="https://wa.me/5541998511625"
       target="_blank"
+      rel="noopener noreferrer"
     >
       WhatsApp
     </a>
@@ -140,6 +148,7 @@ para empresas e negócios em Curitiba.
         class="btn-primary"
         href="https://wa.me/5541998511625"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Falar com Técnico
       </a>
@@ -427,6 +436,7 @@ para empresas e negócios em Curitiba.
       href="https://wa.me/5541998511625"
       target="_blank"
       class="btn-primary"
+      rel="noopener noreferrer"
     >
       Falar com Técnico
     </a>
@@ -584,7 +594,8 @@ para empresas e negócios em Curitiba.
     <iframe
       src="https://www.google.com/maps?q=Rua+Odilon+Negrao+200+Santa+Felicidade+Curitiba&output=embed"
       allowfullscreen=""
-      loading="lazy">
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin">
     </iframe>
 
   </div>
@@ -731,10 +742,15 @@ para empresas e negócios em Curitiba.
   href="https://wa.me/5541998511625"
   class="whatsapp-float"
   target="_blank"
+  rel="noopener noreferrer"
 >
   <i class="fa-brands fa-whatsapp"></i>
 </a>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"
+  integrity="sha384-gZSNMuUgSbqcltOBBRNXCH+szg+2C69ISFyCk2w+xsZc0iFU+bIVPfYPmLwLtNzz"
+  crossorigin="anonymous"
+></script>
 
 <script src="script.js"></script>
 </body>
