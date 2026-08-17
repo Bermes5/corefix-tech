@@ -11,7 +11,9 @@ const SITE_CONFIG = {
 
 const createWhatsAppUrl = (message) => {
   const demoContext = 'Estou visualizando o site demonstrativo ClimaSul desenvolvido pela CoreFix.\n\n';
-  return `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(demoContext + message)}`;
+  const safeNumber = String(SITE_CONFIG.whatsappNumber).replace(/\D/g, '');
+  if (!/^\d{10,15}$/.test(safeNumber)) throw new Error('Número de WhatsApp inválido na configuração.');
+  return `https://wa.me/${safeNumber}?text=${encodeURIComponent((demoContext + message).slice(0, 3500))}`;
 };
 
 const setupWhatsAppLinks = () => {

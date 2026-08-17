@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://images.pexels.com data:; connect-src 'self'; frame-src 'none'; form-action 'self' https://wa.me; upgrade-insecure-requests">
   <title>Demonstração de Site para Ar-Condicionado | CoreFix + ClimaSul</title>
   <meta name="description" content="Demonstração de site para empresas de ar-condicionado criada pela CoreFix. Empresa, avaliações, endereços e dados exibidos são fictícios.">
   <meta name="theme-color" content="#0b5fc6">
-  <meta name="robots" content="noindex, follow">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Demonstração CoreFix | Site para Ar-Condicionado">
@@ -237,11 +239,11 @@
         </div>
         <form class="quote-form" id="quote-form">
           <div class="form-grid">
-            <label><span>Nome</span><input type="text" id="name" name="name" autocomplete="name" required placeholder="Seu nome"></label>
-            <label><span>Telefone</span><input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="(41) 99999-0000"></label>
+            <label><span>Nome</span><input type="text" id="name" name="name" autocomplete="name" maxlength="80" required placeholder="Seu nome"></label>
+            <label><span>Telefone</span><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" maxlength="24" required placeholder="(41) 99999-0000"></label>
             <label><span>Tipo de serviço</span><select id="service" name="service" required><option value="">Selecione</option><option>Instalação</option><option>Limpeza e higienização</option><option>Manutenção preventiva</option><option>Manutenção corretiva</option><option>Carga de gás refrigerante</option><option>Diagnóstico</option><option>Outro</option></select></label>
             <label><span>Tipo de atendimento</span><select id="profile" name="profile" required><option value="">Selecione</option><option>Residencial</option><option>Comercial</option></select></label>
-            <label class="full"><span>Mensagem</span><textarea id="message" name="message" rows="4" placeholder="Ex.: aparelho não está gelando, marca/modelo, quantidade de equipamentos..."></textarea></label>
+            <label class="full"><span>Mensagem</span><textarea id="message" name="message" rows="4" maxlength="1200" placeholder="Ex.: aparelho não está gelando, marca/modelo, quantidade de equipamentos..."></textarea></label>
           </div>
           <button class="btn btn-primary btn-lg full-button" type="submit">Enviar pelo WhatsApp</button>
           <small class="form-note">Ao clicar, nenhuma informação é armazenada neste site. Os dados são apenas usados para montar sua mensagem.</small>

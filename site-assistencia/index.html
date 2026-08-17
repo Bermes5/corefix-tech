@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self' 'sha256-bvpqhBftNRRldRm3SbuEpWmPlf3kAI3sPlAgIEvJKJI='; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; frame-src 'none'; form-action 'self' https://wa.me; upgrade-insecure-requests">
   <meta name="description" content="Criação de sites profissionais e landing pages para negócios locais. Sites rápidos, responsivos e focados em transformar visitas em contatos pelo WhatsApp.">
   <meta name="keywords" content="criação de sites Curitiba, landing page Curitiba, site para empresa, site profissional, site para negócios locais">
   <meta name="author" content="CoreFix Tech">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta property="og:title" content="CoreFix Tech | Sites que transformam visitas em clientes">
   <meta property="og:description" content="Sites profissionais para negócios locais, com WhatsApp, SEO local e foco em conversão.">
   <meta property="og:image" content="corefix-icon.png">
@@ -16,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="style.css">
 
   <script type="application/ld+json">
@@ -370,9 +372,9 @@
 
       <div class="contact-container">
         <form class="contact-form" id="contactForm">
-          <label>Seu nome<input type="text" id="nome" placeholder="Como posso te chamar?" required></label>
-          <label>Nome da empresa<input type="text" id="empresa" placeholder="Ex.: Oficina Silva"></label>
-          <label>Seu WhatsApp<input type="tel" id="telefone" placeholder="(41) 99999-9999" required></label>
+          <label>Seu nome<input type="text" id="nome" placeholder="Como posso te chamar?" required autocomplete="name" maxlength="80"></label>
+          <label>Nome da empresa<input type="text" id="empresa" placeholder="Ex.: Oficina Silva" autocomplete="organization" maxlength="120"></label>
+          <label>Seu WhatsApp<input type="tel" id="telefone" placeholder="(41) 99999-9999" required autocomplete="tel" inputmode="tel" maxlength="24"></label>
           <label>O que você precisa?
             <select id="servico" required>
               <option value="" selected disabled>Selecione uma opção</option>
@@ -383,7 +385,7 @@
               <option>Ainda não sei</option>
             </select>
           </label>
-          <label>Sobre o projeto<textarea id="mensagem" placeholder="Conte seu segmento, cidade e o principal objetivo do site."></textarea></label>
+          <label>Sobre o projeto<textarea id="mensagem" placeholder="Conte seu segmento, cidade e o principal objetivo do site." maxlength="1200"></textarea></label>
           <button type="submit" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp</button>
         </form>
 

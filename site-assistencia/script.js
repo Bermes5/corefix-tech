@@ -56,7 +56,7 @@ if (contactForm) {
     const mensagem = document.getElementById('mensagem').value.trim();
 
     const texto = `Olá! Quero solicitar um orçamento para um site.\n\nNome: ${nome}\nEmpresa: ${empresa || 'Não informado'}\nMeu WhatsApp: ${telefone}\nProjeto: ${servico}\nDetalhes: ${mensagem || 'Quero entender qual solução é mais indicada para meu negócio.'}`;
-    const url = `https://wa.me/5541998511625?text=${encodeURIComponent(texto)}`;
+    const url = `https://wa.me/5541998511625?text=${encodeURIComponent(texto.slice(0, 3500))}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   });
 }

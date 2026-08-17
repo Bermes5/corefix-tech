@@ -8,7 +8,11 @@ const SITE_CONFIG = {
   address: 'Curitiba - PR',
   corefixWhatsapp: '5541998511625'
 };
-const waUrl = (number, message) => `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+const waUrl = (number, message) => {
+  const safeNumber = String(number).replace(/\D/g, '');
+  if (!/^\d{10,15}$/.test(safeNumber)) throw new Error('Número de WhatsApp inválido na configuração.');
+  return `https://wa.me/${safeNumber}?text=${encodeURIComponent(String(message).slice(0, 3500))}`;
+};
 document.querySelectorAll('.whatsapp-link').forEach(link => {
   link.href = waUrl(SITE_CONFIG.whatsappNumber, link.dataset.message || 'Olá! Gostaria de solicitar atendimento elétrico.');
   link.target = '_blank';
@@ -19,7 +23,8 @@ corefixCta.href = waUrl(SITE_CONFIG.corefixWhatsapp, 'Olá! Vi a demonstração 
 corefixCta.target = '_blank';
 corefixCta.rel = 'noopener noreferrer';
 document.querySelectorAll('[data-config]').forEach(el => { el.textContent = SITE_CONFIG[el.dataset.config] || ''; });
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearTarget = document.getElementById('year');
+if (yearTarget) yearTarget.textContent = new Date().getFullYear();
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.main-menu');
 menuToggle.addEventListener('click', () => {

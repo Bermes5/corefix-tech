@@ -8,15 +8,21 @@ const SITE_CONFIG = {
   address: 'Curitiba - PR',
   corefixWhatsapp: '5541998511625'
 };
-const waUrl = (number, message) => `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+const waUrl = (number, message) => {
+  const safeNumber = String(number).replace(/\D/g, '');
+  if (!/^\d{10,15}$/.test(safeNumber)) throw new Error('Número de WhatsApp inválido na configuração.');
+  return `https://wa.me/${safeNumber}?text=${encodeURIComponent(String(message).slice(0, 3500))}`;
+};
 document.querySelectorAll('.whatsapp-link').forEach(link => {
   link.href = waUrl(SITE_CONFIG.whatsappNumber, link.dataset.message || 'Olá! Gostaria de solicitar um orçamento.');
   link.target = '_blank'; link.rel = 'noopener noreferrer';
 });
 document.getElementById('corefixCta').href = waUrl(SITE_CONFIG.corefixWhatsapp, 'Olá! Vi a demonstração de oficina mecânica da CoreFix e gostaria de saber como funcionaria um site como esse para minha empresa.');
 document.getElementById('corefixCta').target = '_blank';
+document.getElementById('corefixCta').rel = 'noopener noreferrer';
 document.querySelectorAll('[data-config]').forEach(el => { el.textContent = SITE_CONFIG[el.dataset.config] || ''; });
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearTarget = document.getElementById('year');
+if (yearTarget) yearTarget.textContent = new Date().getFullYear();
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.main-menu');
 menuToggle.addEventListener('click', () => { const open = menu.classList.toggle('open'); menuToggle.setAttribute('aria-expanded', String(open)); });
