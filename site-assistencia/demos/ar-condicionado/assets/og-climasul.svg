@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#073a7a"/><stop offset="1" stop-color="#1673df"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="1010" cy="100" r="260" fill="#74c7ff" opacity=".12"/>
+  <rect x="90" y="100" width="88" height="88" rx="24" fill="#fff"/>
+  <path d="M134 116c14 16 23 27 23 45a23 23 0 1 1-46 0c0-18 9-29 23-45Z" fill="#0b5fc6"/>
+  <text x="90" y="280" fill="#fff" font-family="Arial, sans-serif" font-size="76" font-weight="700">ClimaSul</text>
+  <text x="90" y="345" fill="#dbeeff" font-family="Arial, sans-serif" font-size="38">Instalação e manutenção de ar-condicionado</text>
+  <text x="90" y="425" fill="#fff" font-family="Arial, sans-serif" font-size="31">Atendimento residencial e comercial • Curitiba e região</text>
+</svg>
