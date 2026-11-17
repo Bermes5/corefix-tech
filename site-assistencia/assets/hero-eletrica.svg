@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" fill="none">
+<defs><linearGradient id="g" x1="60" y1="40" x2="810" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF1B9"/><stop offset="1" stop-color="#F8CD57"/></linearGradient><filter id="sh" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#9B7A22" flood-opacity=".19"/></filter></defs>
+<rect x="20" y="18" width="860" height="614" rx="45" fill="url(#g)"/>
+<circle cx="690" cy="170" r="135" fill="#FCE8A5"/><circle cx="169" cy="509" r="116" fill="#F3D26D"/>
+<path d="M76 483 334 237l252 246" stroke="#DFB94F" stroke-width="24" stroke-linejoin="round"/>
+<path d="M171 408V247h331v321H171Z" fill="#fff9e5" stroke="#293135" stroke-width="10" filter="url(#sh)"/>
+<path d="M151 248 336 82l187 166" stroke="#252D2C" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M320 569V429h93v140" fill="#D2D8CC" stroke="#2C3B34" stroke-width="8"/>
+<rect x="206" y="291" width="96" height="100" rx="8" fill="#CBE0C8" stroke="#283C33" stroke-width="7"/><path d="M254 291v100M206 338h96" stroke="#63966C" stroke-width="6"/>
+<path d="M572 219v261" stroke="#29312B" stroke-width="14" stroke-linecap="round"/>
+<rect x="560" y="297" width="177" height="210" rx="16" fill="#26312D" filter="url(#sh)"/>
+<rect x="584" y="319" width="129" height="167" rx="8" fill="#F6F7E8"/>
+<path d="M649 343v114M600 383h98M600 413h98" stroke="#CAD1C3" stroke-width="6"/>
+<rect x="607" y="350" width="31" height="50" rx="6" fill="#2D3E31"/><rect x="658" y="350" width="31" height="50" rx="6" fill="#2D3E31"/>
+<path d="m649 261-22 58h31l-24 55 57-78h-36l22-35Z" fill="#F8BE38" stroke="#263128" stroke-width="3"/>
+<path d="M576 250c38-34 68-29 99-4" stroke="#E5AD29" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 10"/>
+<path d="M739 524c44-34 53-72 59-101M740 526l78-18" stroke="#3D5B41" stroke-width="7" stroke-linecap="round"/>
+<circle cx="775" cy="385" r="38" fill="#26362A"/><circle cx="775" cy="385" r="19" fill="#FFE57F"/><path d="M775 323v16m-62 46h16m91 0h16m-102-44 11 11m81-11-12 11" stroke="#364938" stroke-width="6" stroke-linecap="round"/>
+<rect x="68" y="74" width="168" height="51" rx="25" fill="#23362C"/><text x="91" y="105" font-family="Arial,sans-serif" font-size="17" font-weight="800" fill="#FFEBA5">ENERGIA SEGURA</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" fill="none">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="780" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#30333B"/><stop offset="1" stop-color="#13151A"/></linearGradient><linearGradient id="car" x1="205" y1="260" x2="697" y2="451" gradientUnits="userSpaceOnUse"><stop stop-color="#FE9B3E"/><stop offset="1" stop-color="#DE4C26"/></linearGradient></defs>
+<rect x="18" y="18" width="864" height="614" rx="44" fill="url(#bg)"/>
+<path d="M25 480h840M25 520h840M25 563h840" stroke="#363A42" stroke-width="2"/>
+<path d="M80 120h742" stroke="#383C44" stroke-width="3" stroke-dasharray="10 16"/>
+<circle cx="736" cy="178" r="115" fill="#D96734" opacity=".08"/><circle cx="230" cy="475" r="173" fill="#F2994A" opacity=".065"/>
+<path d="M122 460h663" stroke="#E66B39" stroke-width="5"/>
+<path d="m185 417 51-12 78-107c13-18 38-24 72-24h165c32 0 66 12 87 36l64 77 57 16c23 6 36 19 37 46v29H137v-30c2-18 17-26 48-31Z" fill="url(#car)"/>
+<path d="m325 306 56-15h177c26 0 49 12 62 29l39 53H266l59-67Z" fill="#232934"/>
+<path d="M462 292v81" stroke="#F9AF70" stroke-width="5"/>
+<path d="M260 381h404" stroke="#B63724" stroke-width="4"/>
+<path d="M166 429h72M691 422h70" stroke="#FFD6A2" stroke-width="14" stroke-linecap="round"/>
+<path d="M191 450h582" stroke="#F7B36A" stroke-width="6"/>
+<circle cx="277" cy="477" r="64" fill="#15181D" stroke="#777A7E" stroke-width="6"/><circle cx="277" cy="477" r="35" fill="#84868E"/><circle cx="277" cy="477" r="16" fill="#252934"/>
+<circle cx="662" cy="477" r="64" fill="#15181D" stroke="#777A7E" stroke-width="6"/><circle cx="662" cy="477" r="35" fill="#84868E"/><circle cx="662" cy="477" r="16" fill="#252934"/>
+<path d="M158 432 78 426m724-10 39-18" stroke="#E66B39" stroke-width="6" stroke-linecap="round"/>
+<path d="M664 117h125v90H664" stroke="#565B61" stroke-width="14" stroke-linejoin="round"/><path d="M705 206v62M756 206v62" stroke="#4F555D" stroke-width="12"/><path d="M680 266h98" stroke="#525960" stroke-width="14"/>
+<path d="M116 106h178" stroke="#F78B49" stroke-width="6" stroke-linecap="round"/><path d="M116 127h120" stroke="#777B7E" stroke-width="6" stroke-linecap="round"/>
+<rect x="79" y="539" width="225" height="51" rx="10" fill="#25292F" stroke="#434A52"/><text x="99" y="570" font-family="Arial,sans-serif" font-size="17" font-weight="800" fill="#FA9B55">DIAGNÓSTICO PRECISO</text>
+</svg>
